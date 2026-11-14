@@ -156,3 +156,7 @@ OK
 * **License**: Apache-2.0
 * **Neuro-Symbolic Gate**: AST structural verification ensuring clean syntax and zero arbitrary execution exploits (`ast_validator.py` clean).
 * **Observability Compliant**: Compatible with standard OpenTelemetry JSON spans for Datadog, Honeycomb, and Jaeger.
+
+---
+
+Part of [my always-on agent stack](https://github.com/Amz34) · [Awesome Agent Infrastructure](https://github.com/Amz34/awesome-agent-infrastructure) (135 live-checked building blocks).

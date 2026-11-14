@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-swarm-mesh"
+version = "0.1.0"
+description = "High-throughput concurrent multi-agent router mesh with stateful DAG execution, dynamic fan-out, and telemetry integration."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+keywords = ["multi-agent", "swarm", "langgraph", "concurrency", "distributed-systems", "orchestration"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/Amz34/enterprise-swarm-mesh"
+Repository = "https://github.com/Amz34/enterprise-swarm-mesh.git"
+Issues = "https://github.com/Amz34/enterprise-swarm-mesh/issues"

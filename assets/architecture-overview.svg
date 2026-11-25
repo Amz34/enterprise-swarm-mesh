@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #30363d; stroke-width: 1.5; rx: 8px; }
+      .box-highlight { fill: #161b22; stroke: #58a6ff; stroke-width: 2; rx: 8px; }
+      .title { fill: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; font-weight: 600; }
+      .label { fill: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 500; }
+      .subtext { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; }
+      .code { fill: #79c0ff; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .badge-green { fill: #238636; }
+      .badge-blue { fill: #1f6feb; }
+      .badge-purple { fill: #8957e5; }
+      .badge-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 600; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#58a6ff" />
+    </marker>
+  </defs>
+
+  <rect width="1000" height="480" class="bg" rx="12" />
+
+  <text x="40" y="45" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Enterprise Swarm Mesh: Stateful Multi-Agent DAG Topology</text>
+  <text x="40" y="68" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">High-Throughput Concurrent Router Mesh with Dynamic Fan-Out, AST Verification, and OpenTelemetry Compliance</text>
+
+  <!-- Stage 1: Swarm Router -->
+  <g transform="translate(40, 100)">
+    <rect width="270" height="330" class="box" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-blue" />
+    <text x="50" y="27" class="badge-text">ROUTER</text>
+    <text x="15" y="55" class="title">SwarmRouter Ingress</text>
+    <text x="15" y="75" class="subtext">Dynamic Intent Dispatch</text>
+
+    <rect x="15" y="95" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Task Payload Ingestion</text>
+    <text x="25" y="132" class="subtext">• Multi-tenant intent routing</text>
+    <text x="25" y="147" class="subtext">• Sub-50ms taxonomy mapping</text>
+
+    <rect x="15" y="175" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="195" class="label">Conditional Edge Decider</text>
+    <text x="25" y="212" class="code">Router.dispatch(task_context)</text>
+    <text x="25" y="227" class="subtext">• Dynamic DAG branch selection</text>
+
+    <rect x="15" y="255" width="240" height="55" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="275" class="label">Concurrency Governor</text>
+    <text x="25" y="292" class="subtext">• Token-bucket rate limiting</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 310 250 L 350 250" class="arrow" />
+
+  <!-- Stage 2: Fan-Out Mesh -->
+  <g transform="translate(360, 100)">
+    <rect width="280" height="330" class="box-highlight" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-purple" />
+    <text x="50" y="27" class="badge-text">EXECUTION</text>
+    <text x="15" y="55" class="title">Concurrent Fan-Out Mesh</text>
+    <text x="15" y="75" class="subtext">Parallel Specialized Workers</text>
+
+    <rect x="15" y="95" width="250" height="75" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Worker A: Code Synthesis</text>
+    <text x="25" y="132" class="subtext">• Neuro-symbolic generation</text>
+    <text x="25" y="147" class="subtext">• AST structure preservation</text>
+
+    <rect x="15" y="180" width="250" height="75" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="200" class="label">Worker B: Context Enrichment</text>
+    <text x="25" y="218" class="code">Parallel.gather(workers, k=16)</text>
+    <text x="25" y="235" class="subtext">• Multi-agent dialectic consensus</text>
+
+    <rect x="15" y="265" width="250" height="45" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="285" class="label">Stateful Session Memory</text>
+    <text x="25" y="298" class="subtext">• Ephemeral scratch vs Long-term state</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 640 250 L 680 250" class="arrow" />
+
+  <!-- Stage 3: Verification & Telemetry -->
+  <g transform="translate(690, 100)">
+    <rect width="270" height="330" class="box" />
+    <rect x="15" y="15" width="70" height="18" rx="4" class="badge-green" />
+    <text x="50" y="27" class="badge-text">GATEWAY</text>
+    <text x="15" y="55" class="title">AST Verifier &amp; Telemetry</text>
+    <text x="15" y="75" class="subtext">Proof of Execution &amp; Traces</text>
+
+    <rect x="15" y="95" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="115" class="label">Deterministic AST Validation</text>
+    <text x="25" y="132" class="subtext">• Zero-defect code audit</text>
+    <text x="25" y="147" class="subtext">• Syntax and dependency check</text>
+
+    <rect x="15" y="175" width="240" height="70" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="195" class="label">OpenTelemetry Spans</text>
+    <text x="25" y="212" class="code">Trace: span_id, latency, tokens</text>
+    <text x="25" y="227" class="subtext">• Enterprise audit-ready receipts</text>
+
+    <rect x="15" y="255" width="240" height="55" rx="6" fill="#21262d" stroke="#30363d" />
+    <text x="25" y="275" class="label">Final Output Consensus</text>
+    <text x="25" y="292" class="subtext">• High-confidence result payload</text>
+  </g>
+</svg>

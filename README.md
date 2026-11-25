@@ -4,13 +4,15 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](pyproject.toml)
 
-High-throughput, concurrent multi-agent router mesh implementing stateful directed acyclic graph (DAG) execution, conditional edge traversal, rate-limited batch processing, and telemetry compliance.
+High-throughput, concurrent multi-agent router mesh implementing stateful directed acyclic graph (DAG) execution, conditional edge traversal, rate-limited batch processing, and OpenTelemetry compliance.
 
-Designed as an unslop, zero-fluff core engine uniting patterns from **Kyegomez/Swarms** and **LangGraph** with deterministic AST validation and zero runtime framework bloat.
+Designed as an unslop, zero-fluff enterprise engine uniting production DAG scheduling with deterministic AST validation and zero runtime framework bloat.
 
 ---
 
 ## Architectural Topology
+
+![Enterprise Swarm Mesh Architecture](assets/architecture-overview.svg)
 
 ```mermaid
 flowchart TD
